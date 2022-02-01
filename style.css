@@ -348,7 +348,7 @@ header nav ul a:hover{
       justify-content: center;
       justify-content: space-around;
       gap: 30px;
-      row-gap: 150px;
+      row-gap: 100px;
       font-family: 'Jura', sans-serif;
   }
   .skillsTab article{
