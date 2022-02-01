@@ -648,7 +648,6 @@ header nav ul a:hover{
   /* contact */
   #contact{
     height: max-content;
-    overflow-x: hidden;
 }
 #contact article{
     padding: 20px;
