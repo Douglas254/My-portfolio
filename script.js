@@ -85,7 +85,6 @@ window.addEventListener("scroll",()=>{
     }else{
         article.style.right = "1200px"
         img.style.left = "1000px"
-        
     }
 
 })
