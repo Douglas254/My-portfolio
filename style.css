@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:  #141212;
-    color: white;
+    background:  #F9EBE9;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
 }
 #home{
@@ -156,9 +156,6 @@ header nav ul a:hover{
     .landing p,h1{
         margin-left: 30px;
     }
-    .scroll{
-        bottom: 70px;
-    }
 }
 @media only screen and (max-width: 400px){
     #ul1{
@@ -192,8 +189,9 @@ header nav ul a:hover{
     overflow: hidden;
     border-right: 2px solid;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
+
 .p1onload{
     animation: typing 3s steps(19), blink .5s step-end infinite alternate;
     animation-delay: 1s;
@@ -215,7 +213,7 @@ header nav ul a:hover{
     overflow: hidden;
     border-right: 2px solid;
     font-size: 1.3rem;
-    font-family: monospace;
+    font-family: monospace !important;
   }
   .p2onload {
     animation: typing 1.5s steps(14), blink .5s step-end infinite alternate;
@@ -227,7 +225,7 @@ header nav ul a:hover{
     overflow: hidden;
     border-right: 2px solid;
     font-size: 1.3rem;
-    font-family: monospace;
+    font-family: monospace !important;
   }
   .p3onload{
     animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
@@ -236,26 +234,14 @@ header nav ul a:hover{
   .landing p,h1{
     margin-top: 10px;
 }
-  .scroll{
-      height: 60px;
-      width: 30px;
-      border: 1px solid #F8483B;
-      border-radius: 30px;
-      align-self: center;
-      position: absolute;
-      bottom: 40px;
-      display : flex;
-      padding: 9px;
-      opacity: 0;
-      transform: opacity .4s ease-in-out;
-  }
-  .taptap{
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      background-color: #F8483B;
+  .fa-arrow-down{
+      font-size: 25px;
       position: relative;
-      animation: tap 4s  infinite ease-in-out;
+      animation: tap 2s  infinite ease-in-out;
+      justify-self: center;
+      align-self: center;
+      margin-top: 120px;
+      opacity: 0;
     }
   @keyframes tap {
       0% {
@@ -852,8 +838,8 @@ button{
       color: black;
   }
   .dark10000{
-      background: white;
-      color: #141212;
+      background: black;
+      color: white;
   }
   .jpegg{
       height: 490px;

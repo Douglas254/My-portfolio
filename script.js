@@ -44,7 +44,7 @@ nav1.addEventListener("click",function(e){
 })
 //anime
 let land = document.querySelector(".landing");
-window.addEventListener("load",()=>{
+// window.addEventListener("load",()=>{
     var delay1 = 1200; //1 second
     var delay2 = 5100;
     var delay3 = 8100;
@@ -63,12 +63,12 @@ setTimeout(function() {
 },delay3);
 p3.classList.add("p3onload")
 //scroll
-const scrollBar = document.querySelector(".scroll");
+const scrollBar = document.querySelector(".fa-arrow-down");
 const tap = document.querySelector(".taptap");
 setTimeout(()=>{
     scrollBar.style.opacity = "1";
-},11000)
-})
+},10300)
+// })
 //scroll
 
 window.addEventListener("scroll",()=>{
