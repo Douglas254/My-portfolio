@@ -300,7 +300,7 @@ header nav ul a:hover{
       width: 270px;
       height: 270px;
       overflow: hidden !important;
-      border-radius: 20px;
+      border-radius: 10px;
   }
   #aboutMe article p{
       font-size: 23px;
