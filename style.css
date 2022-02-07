@@ -811,8 +811,8 @@ button{
   #downbar{
       overflow-x: unset !important;
       z-index: 10700;
-      opacity: 0;
-      transition: all .2s ease-out;
+      /* opacity: 0; */
+      
   }
   #downbar ul{
       height: min-content;
@@ -821,11 +821,12 @@ button{
       display: flex;
       justify-content: space-around;
       position: fixed;
-      bottom: 0px;
+      bottom: -100px;
       border: 1px solid black;
       background: #C7493A;
       overflow-x: unset !important;
       z-index: 1070;
+      transition: all .5s ease-out;
   }
   #downbar ul li{
       width: max-content;

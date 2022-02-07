@@ -81,7 +81,6 @@ window.addEventListener("scroll",()=>{
     if(contentposition < screenposition){
        article.style.right = "0px"
        img.style.left = "0px";
-       scrollBar.style.opacity = "0";
     }else{
         article.style.right = "1200px"
         img.style.left = "1000px"
@@ -93,13 +92,14 @@ moonIcon.addEventListener("click",()=>{
     const body = document.querySelector("body")
     body.classList.toggle("dark10000")
 })
-const downBar = document.querySelector("#downbar");
+const downBar = document.querySelector("#downbar ul");
+console.log(downBar);
 window.onscroll = function(e) {
     if(this.oldScroll > this.scrollY){
-       downBar.style.opacity = "1"
+       downBar.style.bottom = "0px"
     }
     else{
-        downBar.style.opacity = "0"
+        downBar.style.bottom = "-100px"
     }
     this.oldScroll = this.scrollY;
   }
