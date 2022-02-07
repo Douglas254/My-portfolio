@@ -81,6 +81,8 @@ window.addEventListener("scroll",()=>{
     if(contentposition < screenposition){
        article.style.right = "0px"
        img.style.left = "0px";
+       let scrollBar1 = document.querySelector(".fa-arrow-down");
+       scrollBar1.style.opacity = "0"
     }else{
         article.style.right = "1200px"
         img.style.left = "1000px"
