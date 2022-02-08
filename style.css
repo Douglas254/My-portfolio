@@ -296,6 +296,7 @@ header nav ul a:hover{
   #aboutMe article{
       align-self: center;
       font-family: 'Nanum Brush Script', cursive;
+      padding: 20px;
   }
   #aboutMe img{
       width: 270px;
