@@ -118,7 +118,6 @@ window.addEventListener("scroll",()=>{
     const width = window.innerWidth
     if (width<530){
         var delay = 0;
-
     }else{
         var delay = 2000;
     };
