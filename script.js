@@ -1,3 +1,5 @@
+//dear future me, if you are reading this code, i just what to say 
+// I AM SORRY
 //nav button
 const nav = document.querySelector(".fa-bars");
 const ul = document.querySelector("header nav ul");
