@@ -65,7 +65,7 @@ setTimeout(function() {
 },delay3);
 p3.classList.add("p3onload")
 //scroll
-const scrollBar = document.querySelector(".fa-arrow-down");
+const scrollBar = document.querySelector(".scrollDown");
 const tap = document.querySelector(".taptap");
 setTimeout(()=>{
     scrollBar.style.opacity = "1";
@@ -74,7 +74,7 @@ setTimeout(()=>{
 //scroll
 
 window.addEventListener("scroll",()=>{
-    let content = document.querySelector(".content3");
+    let content = document.querySelector(".content2");
     let contentposition = content.getBoundingClientRect().top;
     let screenposition = window.innerHeight;
     let img = document.querySelector(".content3");
