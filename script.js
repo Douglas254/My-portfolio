@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 //dear future me if you are reading this code i just want to say i am sorry
-=======
+
 //dear future me, if you are reading this code, i just what to say 
 // I AM SORRY
->>>>>>> d8ad0188a048c609ea8d8d11f9fd7e050f9d4366
+
 //nav button
 const nav = document.querySelector(".fa-bars");
 const ul = document.querySelector("header nav ul");
