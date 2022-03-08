@@ -7,161 +7,47 @@
 html{
     scroll-behavior: smooth;
 }
+:root {
+    --main-font: 'alaska', sans-serif;
+    --sub-font : arial, sans-serif;
+    --temp-color: cyan;
+}
 body{
     background:  #ffffff;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--sub-font);
 }
-#home{
-    position: absolute;
-    top: 0;
-    overflow-x: hidden !important;
-}
-h2{
-    font-family: 'Alegreya Sans SC', sans-serif;
-}
-header{
-    margin-top: 6vh;
-    font-size: 15px;
-    font-family: 'Gentium Book Basic', serif;
-}
-header nav{
+/* nav bar */
+nav{
+    margin-top: 20px;
     display: flex;
-   align-items: center;
+    align-items: center;
 }
-.fa-bars{
-    visibility: hidden;
-}
-header nav ul{
-    display: flex;
-    justify-self: flex-end;
+nav > ul{
     margin-left: auto;
 }
-header nav ul li{
-    margin-right: 30px;
-}
-header nav ul li i{
-    margin-right: 3px;
-}
-header nav ul a{
+nav > ul *{
+    font-weight: 600;
+    margin-left: 10px;
     text-decoration: none;
-    transition: all .1s ease;
+    transition: color 100ms ease;
 }
-header nav ul a{
-    color:  #C7493A;
+nav > ul > a:visited{
+    color: black;
 }
-header nav ul a:visited{
-    color:  #C7493A;
+nav > ul > a:hover{
+    color: rgb(24, 123, 204);
 }
-header nav ul a:hover{
-    color: rgba(118, 194, 197, 0.815);
+nav > ul > a > i{
+    margin-right: 5px;
 }
-.fa-times-circle{
-    visibility: hidden;
+nav > ul:last-child{
+    margin-right: 10px;
 }
-#checkbtn{
-    visibility: visible;
-    transform: scale(0);
-    position: relative;
-}
-#moon{
-    font-size: 25px;
-    position: relative;
-    left: 50px;
-}
-.fa-bars{
-    position: relative;
-    left: 100px;
-}
-.last{
-    visibility: hidden;
-    font-size: 2px;
-}
-@media only screen and (max-width: 975px) {
-    header nav ul{
-        position: fixed;
-        flex-direction: column;
-        align-items: center;
-        left: 130%;
-        top: 5px;
-        min-height: 100vh;
-        max-width: 100vw;
-        transition: all .5s ease-in-out;
-        z-index: 1;
-        font-size: 12px;
-    }
-    header nav ul li{
-        margin-bottom: 20px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-    header nav ul a{
-        width: 100%;
-        height: 70px;
-        position: relative;
-        top: 50px;
-    }
-    .fa-bars{
-        visibility: visible;
-        font-size: 20px;
-        
-    }
-    .new{
-      position: absolute;
-      right: 0;
-    }
-    nav{
-        position: relative;
-        width: 100%;
-    }
-    #moon{
-        position: absolute;
-        left: 85vw;
-    }
-    .fa-bars{
-        position: relative;
-        left:25px;
-    }
-    .fa-times-circle{
-        visibility: visible;
-        position: absolute;
-        right: 10%;
-        top: 20px;
-        margin-bottom: 60px;
-        font-size: 20px;
-    }
-    #ul1{
-        height: 80vh;
-        background: linear-gradient(45deg,#A33327,#a82618d5);
-        
-        width: 100%;
-    }
-    .last{
-        visibility: visible;
-        font-size: 10px;
-        position: relative;
-        top: 100px;
-    }
-    .home2{
-        border-top: .5px solid black;
-    }
-    header nav ul a{
-        color:  black;
-    }
-    header nav ul a:visited{
-        color:  black;
-    }
-    .landing p,h1{
-        margin-left: 30px;
-    }
-    .content2 p{
-        font-size: 1.3rem; 
-    }
-}
-@media only screen and (max-width: 400px){
-    #ul1{
-        min-width: 100vw;
-    }    
+nav > img{
+    margin-left: 10px;
+    height: 70px;
+    width: 80px;
 }
 .landing{
     height: 90vh;
