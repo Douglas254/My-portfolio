@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 //dear future me if you are reading this code i just want to say i am sorry
+=======
+//dear future me, if you are reading this code, i just what to say 
+// I AM SORRY
+>>>>>>> d8ad0188a048c609ea8d8d11f9fd7e050f9d4366
 //nav button
 const nav = document.querySelector(".fa-bars");
 const ul = document.querySelector("header nav ul");
@@ -64,7 +69,7 @@ setTimeout(function() {
 },delay3);
 p3.classList.add("p3onload")
 //scroll
-const scrollBar = document.querySelector(".fa-arrow-down");
+const scrollBar = document.querySelector(".scrollDown");
 const tap = document.querySelector(".taptap");
 setTimeout(()=>{
     scrollBar.style.opacity = "1";
@@ -73,7 +78,7 @@ setTimeout(()=>{
 //scroll
 
 window.addEventListener("scroll",()=>{
-    let content = document.querySelector(".content3");
+    let content = document.querySelector(".content2");
     let contentposition = content.getBoundingClientRect().top;
     let screenposition = window.innerHeight;
     let img = document.querySelector(".content3");

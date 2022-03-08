@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:  #F9EBE9;
+    background:  #ffffff;
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -28,8 +28,6 @@ header{
 header nav{
     display: flex;
    align-items: center;
-   /* border-bottom: .1px dotted black;
-   border-top: .1px dotted black; */
 }
 .fa-bars{
     visibility: hidden;
@@ -237,18 +235,28 @@ header nav ul a:hover{
   .landing p,h1{
     margin-top: 10px;
 }
-  .fa-arrow-down{
-      font-size: 25px;
-      position: relative;
-      animation: tap 2s  infinite ease-in-out;
-      justify-self: center;
-      align-self: center;
-      margin-top: 120px;
-      opacity: 0;
-    }
+.scrollDown{
+    height: 50px;
+    width: 25px;
+    border: 1px solid black;
+    align-self: center;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 10px;
+    opacity: 0;
+}
+.ping{
+    height: 12px;
+    width: 12px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    animation: tap 2s infinite;
+    left: 5px;
+}
   @keyframes tap {
       0% {
-          top: 0px;
+          top: 5px;
       }
       50% {
           top: 30px;
@@ -300,7 +308,7 @@ header nav ul a:hover{
   #aboutMe article{
       align-self: center;
       font-family: 'Nanum Brush Script', cursive;
-      padding: 20px;
+      padding: 60px;
   }
   #aboutMe img{
       width: 270px;
@@ -310,7 +318,7 @@ header nav ul a:hover{
   }
   #aboutMe article p{
       /* font-size: 23px; */
-      text-align: right;
+      text-align: left;
   }
   @media only screen and (min-width: 900px){
     #aboutMe img{
