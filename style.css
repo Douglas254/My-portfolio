@@ -22,7 +22,7 @@ nav{
     margin-top: 6vh;
     display: flex;
     align-items: center;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
     padding: 0 20px 0 20px;
 }
 nav > .fa-bars,nav > ul > .fa-times-circle{
@@ -34,8 +34,6 @@ nav > .fa-bars,nav > ul > .fa-times-circle{
 nav > ul{
     margin-left: auto;
     position: relative;
-    overflow-y: hidden;
-
 }
 nav > ul *{
     font-weight: 600;
@@ -66,18 +64,19 @@ nav > img{
     nav > ul {
         display: flex;
         flex-direction: column;
-        overflow-y: hidden;
         z-index: 1070;
         height: 100vh;
         width: 100vw;
         position: absolute;
         top: 50px;
-        right: -100%;
+        left: -100%;
+        overflow-y: hidden;
         background: rgba(225, 201, 201, 0.21);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.4px);
         -webkit-backdrop-filter: blur(4.4px);
         border: 1px solid rgba(225, 201, 201, 0.3);
+        transition: left .5s ease;
     }
     nav > ul *{
         margin: 10px;

@@ -8,21 +8,21 @@
 if(window.innerWidth < 768){
     let moon = document.querySelector(".fa-moon")
     moon.classList.remove("fa-2x")
+    //navigation bar
+    let bars = document.querySelector(".fa-bars")
+    let navUl = document.querySelector("nav > ul")
+    bars.addEventListener("click",()=>{
+        navUl.style.left = "0%"
+    })
+    let X = document.querySelector(".fa-times-circle")
+    X.addEventListener("click",()=>{
+        navUl.style.left = "-100%"
+    })
+    let ulItems = [...document]
+    navUl.addEventListener("click",()=>{
+
+    })
 }
-// const nav = document.querySelector(".fa-bars");
-// const ul = document.querySelector("header nav ul");
-// nav.addEventListener("click",function(){
-//     ul.style.left = "0%"
-// })
-// const navback = document.querySelector(".fa-times-circle");
-// navback.addEventListener("click",function(){
-//     const ul = document.querySelector("header nav ul");
-//     ul.style.left = "130%"
-// })
-// const windows = document.querySelector("#windows");
-// windows.addEventListener("click",function(){
-//     ul.style.left = "0%"
-// })
 // ul.addEventListener("click",function(e){
 //     if(e.target.className == "home2" || "about"  || "skills1" || "projects" || "contact"){
 //         ul.style.left = "130%"
