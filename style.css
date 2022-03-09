@@ -22,6 +22,8 @@ nav{
     margin-top: 6vh;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
+    padding: 0 20px 0 20px;
 }
 nav > .fa-bars,nav > ul > .fa-times-circle{
     display: none;
@@ -31,6 +33,9 @@ nav > .fa-bars,nav > ul > .fa-times-circle{
 }
 nav > ul{
     margin-left: auto;
+    position: relative;
+    overflow-y: hidden;
+
 }
 nav > ul *{
     font-weight: 600;
@@ -54,9 +59,36 @@ nav > ul:last-child{
     margin-right: 10px;
 }
 nav > img{
-    margin-left: 10px;
     height: 70px;
     width: 80px;
+}
+@media screen and (max-width:768px){
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        z-index: 1070;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 50px;
+        right: -100%;
+        background: rgba(225, 201, 201, 0.21);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.4px);
+        -webkit-backdrop-filter: blur(4.4px);
+        border: 1px solid rgba(225, 201, 201, 0.3);
+    }
+    nav > ul *{
+        margin: 10px;
+    }
+    nav > .fa-bars,nav > ul > .fa-times-circle{
+        display: block;
+    }
+    .fa-times-circle{
+        position: absolute;
+        right: 0%;
+    }
 }
 .landing{
     height: 90vh;
