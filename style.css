@@ -19,12 +19,15 @@ body{
 }
 /* nav bar */
 nav{
-    margin-top: 20px;
+    margin-top: 6vh;
     display: flex;
     align-items: center;
 }
 nav > .fa-bars,nav > ul > .fa-times-circle{
     display: none;
+}
+.fa-moon{
+    margin-left: auto;
 }
 nav > ul{
     margin-left: auto;
@@ -35,7 +38,9 @@ nav > ul *{
     text-decoration: none;
     transition: color 100ms ease;
 }
-nav > 
+nav > ul > a{
+    color: black;
+}
 nav > ul > a:visited{
     color: black;
 }
