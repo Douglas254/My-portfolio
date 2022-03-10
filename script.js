@@ -30,9 +30,6 @@ const moon = document.querySelector("#moon")
 moon.addEventListener("click", ()=>{
     let body = document.querySelector("body")
     body.classList.toggle("darkMode")
-    moon.classList.toggle("darkModeElements")
-    let bars = document.querySelector(".fa-bars")
-    bars.classList.toggle("darkModeElements")
     moon.classList.toggle("fas");
     moon.classList.toggle("fa-moon");
     moon.classList.toggle("far");
