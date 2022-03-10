@@ -36,35 +36,6 @@ moon.addEventListener("click", ()=>{
     moon.classList.toggle("fa-sun");
 })
 
-// //anime
-// let land = document.querySelector(".landing");
-// // window.addEventListener("load",()=>{
-//     var delay1 = 1200; //1 second
-//     var delay2 = 5100;
-//     var delay3 = 8100;
-//      setTimeout(function() {
-//          p1.textContent = "I am Tinega Collins"        
-// }, delay1);
-// p1.classList.add("p1onload")
-// const p2 = document.querySelector("#p2")
-// setTimeout(function() {
-//     p2.textContent = "And this"
-// }, delay2);
-// p2.classList.add("p2onload")
-// const p3 =document.querySelector("#p3")
-// setTimeout(function() {
-//     p3.textContent = "is My World"
-// },delay3);
-// p3.classList.add("p3onload")
-// //scroll
-// const scrollBar = document.querySelector(".scrollDown");
-// const tap = document.querySelector(".taptap");
-// setTimeout(()=>{
-//     scrollBar.style.opacity = "1";
-// },10300)
-// // })
-// //scroll
-
 // window.addEventListener("scroll",()=>{
 //     let content = document.querySelector(".content2");
 //     let contentposition = content.getBoundingClientRect().top;
