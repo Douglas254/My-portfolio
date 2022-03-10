@@ -35,24 +35,7 @@ moon.addEventListener("click", ()=>{
     moon.classList.toggle("far");
     moon.classList.toggle("fa-sun");
 })
-// const nav1 = document.querySelector("#navigation")
-// nav1.addEventListener("click",function(e){
-//     if(e.target.className == "far fa-sun fa-2x"){
-//         moon.classList.remove("far");
-//         moon.classList.remove("fa-sun");
-//         moon.classList.remove("fa-2x");
-//         moon.classList.add("fas");
-//         moon.classList.add("fa-moon");
-//         moon.classList.add("fa-2x");
-//     }else if(e.target.className == "fas fa-moon fa-2x"){
-//         moon.classList.remove("fas");
-//         moon.classList.remove("fa-moon");
-//         moon.classList.remove("fa-2x");
-//         moon.classList.add("far");
-//         moon.classList.add("fa-sun");
-//         moon.classList.add("fa-2x");
-//     }
-// })
+
 // //anime
 // let land = document.querySelector(".landing");
 // // window.addEventListener("load",()=>{
