@@ -135,87 +135,10 @@ nav > img{
     width: auto;
     height: 60vh;
 }
-.p1onload{
-    animation: typing 3s steps(19), blink .5s step-end infinite alternate;
-    animation-delay: 1s;
-}
-@keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-  #p2{
-    width: 8.3ch;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    font-size: 1.3rem;
-    font-family: monospace !important;
-  }
-  .p2onload {
-    animation: typing 1.5s steps(14), blink .5s step-end infinite alternate;
-    animation-delay: 5s;
-  }
-  #p3{
-    width: 11.3ch;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    font-size: 1.3rem;
-    font-family: monospace !important;
-  }
-  .p3onload{
-    animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
-    animation-delay: 8s;
-  }
-  .landing p,h1{
+.textContent *{
     margin-top: 10px;
+    font-size: 20px;
 }
-.scrollDown{
-    height: 50px;
-    width: 25px;
-    border: 1px solid black;
-    align-self: center;
-    position: absolute;
-    bottom: 30px;
-    border-radius: 10px;
-    opacity: 0;
-}
-.ping{
-    height: 12px;
-    width: 12px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    animation: tap 2s infinite;
-    left: 5px;
-}
-  @keyframes tap {
-      0% {
-          top: 5px;
-      }
-      50% {
-          top: 30px;
-      }
-      100%{
-          top: 0px;
-      }
-  }
-  @media only screen and (min-width: 890px) {
-      h1{
-          text-align: center;
-      }
-      #p1,#p2,#p3{
-          align-self: center;
-          text-align: center;
-      }
-  }
   #aboutMe{
       min-height: 100vh;
       display: flex;
