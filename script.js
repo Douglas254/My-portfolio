@@ -18,17 +18,14 @@ if(window.innerWidth < 768){
     X.addEventListener("click",()=>{
         navUl.style.left = "-100%"
     })
-    let ulItems = [...document]
-    navUl.addEventListener("click",()=>{
-
+    let ul = document.querySelector("nav ul")
+    ul.addEventListener("click", (e)=>{
+        if(e.target.classList == "click"){
+            navUl.style.left = "-100%"
+        }
     })
 }
-// ul.addEventListener("click",function(e){
-//     if(e.target.className == "home2" || "about"  || "skills1" || "projects" || "contact"){
-//         ul.style.left = "130%"
-//     }
-// })
-// //dark mode
+//dark mode
 // const mrMoon = document.querySelector("#moon");
 // mrMoon.addEventListener("click",()=>{
 //     const body = document.querySelector("body")

@@ -24,6 +24,7 @@ nav{
     align-items: center;
     overflow-y: hidden !important;
     padding: 0 20px 0 20px;
+    width: 95vw;
 }
 nav > .fa-bars,nav > ul > .fa-times-circle{
     display: none;
@@ -84,9 +85,21 @@ nav > img{
     nav > .fa-bars,nav > ul > .fa-times-circle{
         display: block;
     }
+    nav > .fa-bars{
+        position: absolute;
+        right: 30px;
+    }
+    .fa-moon{
+        position : relative;
+        right : 30px;
+    }
     .fa-times-circle{
         position: absolute;
         right: 0%;
+    }
+    nav > img{
+        height: 40px;
+        width: 40px;
     }
 }
 .landing{
