@@ -24,12 +24,16 @@ nav{
     align-items: center;
     overflow-y: hidden !important;
     padding: 0 20px 0 20px;
-    width: 95vw;
+    width: 100vw;
+    background:  #ffffff;
 }
 nav > .fa-bars,nav > ul > .fa-times-circle{
     display: none;
 }
 .fa-moon{
+    margin-left: auto;
+}
+.fa-sun{
     margin-left: auto;
 }
 nav > ul{
@@ -61,6 +65,13 @@ nav > img{
     height: 70px;
     width: 80px;
 }
+.darkMode{
+    color: whitesmoke;
+    background: black;
+}
+.darkModeElements{
+    color: black;
+}
 @media screen and (max-width:768px){
     nav > ul {
         display: flex;
@@ -87,11 +98,15 @@ nav > img{
     }
     nav > .fa-bars{
         position: absolute;
-        right: 30px;
+        right: 40px;
     }
     .fa-moon{
         position : relative;
-        right : 30px;
+        right : 50px;
+    }
+    .fa-sun{
+        position : relative;
+        right : 50px; 
     }
     .fa-times-circle{
         position: absolute;

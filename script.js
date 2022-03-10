@@ -26,11 +26,18 @@ if(window.innerWidth < 768){
     })
 }
 //dark mode
-// const mrMoon = document.querySelector("#moon");
-// mrMoon.addEventListener("click",()=>{
-//     const body = document.querySelector("body")
-//     body.classList.toggle("dark10000");
-// })
+const moon = document.querySelector("#moon")
+moon.addEventListener("click", ()=>{
+    let body = document.querySelector("body")
+    body.classList.toggle("darkMode")
+    moon.classList.toggle("darkModeElements")
+    let bars = document.querySelector(".fa-bars")
+    bars.classList.toggle("darkModeElements")
+    moon.classList.toggle("fas");
+    moon.classList.toggle("fa-moon");
+    moon.classList.toggle("far");
+    moon.classList.toggle("fa-sun");
+})
 // const nav1 = document.querySelector("#navigation")
 // nav1.addEventListener("click",function(e){
 //     if(e.target.className == "far fa-sun fa-2x"){
