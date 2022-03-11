@@ -16,6 +16,7 @@ body{
     background:  #ffffff;
     color: black;
     font-family: var(--sub-font);
+    overflow-x: hidden !important;
 }
 /* nav bar */
 nav{
@@ -86,10 +87,8 @@ nav > img{
         top: 50px;
         left: -100%;
         overflow-y: hidden;
-        background: rgba(225, 201, 201, 0.21);
+        background: rgb(151, 140, 97);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4.4px);
-        -webkit-backdrop-filter: blur(4.4px);
         border: 1px solid rgba(225, 201, 201, 0.3);
         transition: left .5s ease;
     }
@@ -165,7 +164,7 @@ nav > img{
     }
 }
 #aboutMe{
-    min-height: 100vh;
+    min-height: max-content;
     overflow-x: hidden !important;
 }
 #aboutMe > h2{
@@ -173,11 +172,30 @@ nav > img{
     text-decoration: underline;
 }
 .aboutMeContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    font-weight: 600;
-    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 50px;
+    font-weight: 400;
+    font-size: 1.2rem;
 } 
+.aboutMeContent > p{
+    display: grid;
+    place-items: center;
+}
+.aboutMeContent > img{
+    height: auto;
+    width: 400px;
+    border-radius: 20px;
+}
+@media screen and (max-width : 768px) {
+    .aboutMeContent{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width : 480px) {
+    .aboutMeContent > img{
+        width: 70vw;
+    }
+}
