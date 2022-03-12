@@ -35,7 +35,17 @@ moon.addEventListener("click", ()=>{
     moon.classList.toggle("far");
     moon.classList.toggle("fa-sun");
 })
-
+//scrolling animations
+window.addEventListener("scroll",()=>{
+    let content = document.querySelector("#aboutMe")
+    let style = document.querySelector(".aboutMeContent p")
+    let contentposition = content.getBoundingClientRect().top;
+    if(contentposition < window.innerHeight){
+        style.style.top = "0px"
+    }else{
+        style.style.top = "450px"
+    }
+})
 // window.addEventListener("scroll",()=>{
 //     let content = document.querySelector(".content2");
 //     let contentposition = content.getBoundingClientRect().top;

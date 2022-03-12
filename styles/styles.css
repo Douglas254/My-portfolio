@@ -179,10 +179,14 @@ nav > img{
     padding: 50px;
     font-weight: 400;
     font-size: 1.2rem;
+
 } 
 .aboutMeContent > p{
     display: grid;
     place-items: center;
+    position: relative;
+    top: 450px;
+    transition: top 800ms ease-in;
 }
 .aboutMeContent > img{
     height: auto;
