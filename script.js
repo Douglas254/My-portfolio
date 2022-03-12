@@ -16,12 +16,12 @@ if(window.innerWidth < 768){
     })
     let X = document.querySelector(".fa-times-circle")
     X.addEventListener("click",()=>{
-        navUl.style.left = "-100%"
+        navUl.style.left = "-120%"
     })
     let ul = document.querySelector("nav ul")
     ul.addEventListener("click", (e)=>{
         if(e.target.classList == "click"){
-            navUl.style.left = "-100%"
+            navUl.style.left = "-120%"
         }
     })
 }
@@ -38,12 +38,19 @@ moon.addEventListener("click", ()=>{
 //scrolling animations
 window.addEventListener("scroll",()=>{
     let content = document.querySelector("#aboutMe")
-    let style = document.querySelector(".aboutMeContent p")
+    let styles = document.querySelector(".aboutMeContent p")
     let contentposition = content.getBoundingClientRect().top;
     if(contentposition < window.innerHeight){
-        style.style.top = "0px"
+        styles.style.top = "0px"
     }else{
-        style.style.top = "450px"
+        styles.style.top = "150px"
+    }
+    let img = document.querySelector(".aboutMeContent img")
+    let imgPosition = img.getBoundingClientRect().top;
+    if(imgPosition < window.innerHeight){
+        img.style.left = "0px"
+    }else{
+        img.style.left = "500px"
     }
 })
 // window.addEventListener("scroll",()=>{

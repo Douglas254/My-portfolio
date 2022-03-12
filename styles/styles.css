@@ -85,7 +85,7 @@ nav > img{
         width: 100vw;
         position: absolute;
         top: 50px;
-        left: -100%;
+        left: -120%;
         overflow-y: hidden;
         background: rgb(151, 140, 97);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -179,24 +179,31 @@ nav > img{
     padding: 50px;
     font-weight: 400;
     font-size: 1.2rem;
-
 } 
 .aboutMeContent > p{
     display: grid;
     place-items: center;
     position: relative;
-    top: 450px;
-    transition: top 800ms ease-in;
+    top: 150px;
+    transition: top 700ms ease-in;
 }
 .aboutMeContent > img{
     height: auto;
     width: 400px;
     border-radius: 20px;
+    position: relative;
+    left: 500px;
+    transition: left 600ms ease-in-out;
+    animation-delay: 300ms;
 }
 @media screen and (max-width : 768px) {
     .aboutMeContent{
+        margin-top: 40px;
         grid-template-columns: 1fr;
         padding: 10px;
+    }
+    .aboutMeContent > p{
+        padding: 70px;
     }
 }
 @media screen and (max-width : 480px) {
@@ -204,6 +211,46 @@ nav > img{
         width: 85vw;
     }
     .aboutMeContent{
-        margin-top: 30px;
+        margin-top: 20px;
+        font-size: .9rem;
     }
+    .aboutMeContent > p{
+        padding: 20px;
+    }
+}
+#cv{
+    width: 1400px;
+    height: 35px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 300;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 100;
+}
+#cv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.5s;
+}
+#cv:hover::before {
+    width: 100%;
+}
+#cv:hover {
+    color: black;
+}
+#cv:active:before {
+    background: #b9b9b9;
 }
