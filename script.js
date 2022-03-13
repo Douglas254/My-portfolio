@@ -44,7 +44,7 @@ window.addEventListener("scroll",()=>{
         if(window.innerWidth < 480){
             styles.style.top = "0px"
         }else{
-            styles.style.top = "-50px"
+            styles.style.top = "-20px"
         }
     }else{
         styles.style.top = "150px"
