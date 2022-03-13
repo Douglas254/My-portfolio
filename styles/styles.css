@@ -165,7 +165,9 @@ nav > img{
 }
 #aboutMe{
     min-height: max-content;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
 }
 #aboutMe > h2{
     text-align: center;
@@ -179,13 +181,17 @@ nav > img{
     padding: 50px;
     font-weight: 400;
     font-size: 1.2rem;
+    background: linear-gradient(90deg,#DB1041,#FD5D34);
+    width: 90vw;
+    border-radius: 20px;
+    margin-top: 20px;
 } 
 .aboutMeContent > p{
     display: grid;
     place-items: center;
     position: relative;
     top: 150px;
-    transition: top 700ms ease-in;
+    transition: top 1200ms ease-in;
 }
 .aboutMeContent > img{
     height: auto;
@@ -235,9 +241,11 @@ nav > img{
 }
 @media screen and (max-width : 768px) {
     .aboutMeContent{
-        margin-top: 40px;
+        margin-top: 4px;
         grid-template-columns: 1fr;
         padding: 10px;
+        gap: 10px;
+
     }
     .aboutMeContent > p{
         padding: 70px;
@@ -248,7 +256,7 @@ nav > img{
 }
 @media screen and (max-width : 480px) {
     .aboutMeContent > img{
-        width: 85vw;
+        width: 80vw;
     }
     .aboutMeContent{
         margin-top: 20px;
@@ -257,4 +265,11 @@ nav > img{
     .aboutMeContent > p{
         padding: 20px;
     }
+}
+
+/* my skill */
+#skills{
+    margin-top: 50px;
+    background: lightblue;
+    min-height: 90vh;
 }

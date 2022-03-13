@@ -41,7 +41,11 @@ window.addEventListener("scroll",()=>{
     let styles = document.querySelector(".aboutMeContent p")
     let contentposition = content.getBoundingClientRect().top;
     if(contentposition < window.innerHeight){
-        styles.style.top = "0px"
+        if(window.innerWidth < 480){
+            styles.style.top = "0px"
+        }else{
+            styles.style.top = "-50px"
+        }
     }else{
         styles.style.top = "150px"
     }
@@ -53,92 +57,13 @@ window.addEventListener("scroll",()=>{
         img.style.left = "500px"
     }
 })
-// window.addEventListener("scroll",()=>{
-//     let content = document.querySelector(".content2");
-//     let contentposition = content.getBoundingClientRect().top;
-//     let screenposition = window.innerHeight;
-//     let img = document.querySelector(".content3");
-//     let article = document.querySelector(".content2")
-//     const scrollBar = document.querySelector(".scroll")
-//     if(contentposition < screenposition){
-//        article.style.right = "0px"
-//        img.style.left = "0px";
-//        let scrollBar1 = document.querySelector(".fa-arrow-down");
-//        scrollBar1.style.opacity = "0"
-//     }else{
-//         article.style.right = "1200px"
-//         img.style.left = "1000px"
-//     }
-
-// })
-// const moonIcon = document.querySelector("#moon2")
-// moonIcon.addEventListener("click",()=>{
-//     const body = document.querySelector("body")
-//     body.classList.toggle("dark10000")
-// })
-// const downBar = document.querySelector("#downbar ul");
-// console.log(downBar);
-// window.onscroll = function(e) {
-//     if(this.oldScroll > this.scrollY){
-//        downBar.style.bottom = "0px"
-//     }
-//     else{
-//         downBar.style.bottom = "-100px"
-//     }
-//     this.oldScroll = this.scrollY;
-//   }
-// window.addEventListener("scroll",()=>{
-//     let content = document.querySelector(".html")
-//     let contentposition = content.getBoundingClientRect().top;
-//     let screenposition = window.innerHeight;
-//     let javascript = document.querySelector(".javascript")
-//     let node = document.querySelector(".node")
-//     let css = document.querySelector(".css")
-//     let html = document.querySelector(".html")
-//     let wordpress = document.querySelector(".wordpress")
-//     const mask = document.querySelector(".masksup")
-//     const width = window.innerWidth
-//     if (width<530){
-//         var delay = 0;
-//     }else{
-//         var delay = 2000;
-//     };
+//animation station
+if(window.innerWidth > 768){
+    let p = document.querySelector(".aboutMeContent p")
+    p.style.animationDelay = "500ms"
+}
     
-//     newFunction(contentposition, screenposition, mask, delay);
-//     function newFunction(contentposition, screenposition, mask, delay,imgJpeg) {
-//         var imgJpeg = document.querySelector(".jpegg")
-//         if (contentposition < screenposition) {
-//             setTimeout(() => {
-//                 mask.classList.add("mask2");
-//                 imgJpeg.style.opacity = "0"
-//                 setTimeout(()=>{
-//                     javascript.style.width = "60%"
-//                 },1000)
-//                 setTimeout(()=>{
-//                     node.style.width = "20%"
-//                 },1200)
-//                 setTimeout(()=>{
-//                     css.style.width = "70%"
-//                 },1400)
-//                 setTimeout(()=>{
-//                     html.style.width = "95%"
-//                 },1600)
-//                 setTimeout(()=>{
-//                     wordpress.style.width = "20%"
-//                 },1800)
-//             }, delay);
-//         }
-//         else {
-//             mask.classList.remove("mask2");
-//             imgJpeg.style.opacity= "1";
-//             javascript.style.width = "0%"
-//             node.style.width = "0%"
-//             css.style.width = "0%"
-//             html.style.width = "0%"
-//             wordpress.style.width = "0%"
-//         }
-//     }
-// });
+
 // window.addEventListener("scroll",()=>{
 //     let content = document.querySelector(".brain")
 //     let contentposition = content.getBoundingClientRect().top;
