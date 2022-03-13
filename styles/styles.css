@@ -280,7 +280,15 @@ nav > img{
     text-decoration: underline;
 }
 #skills > main {
-    background: linear-gradient(90deg,#255D97,#1B7B7B);
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: max-content;
+    width: max-content ;
 }
 #skills > main img{
     height: auto;
@@ -290,10 +298,10 @@ nav > img{
     position: relative;
     padding: 4em;
     transition: transform 2s;
+    height: max-content;
     height: 400px;
-    width: 300px;
+    width: 250px;
     transform-style: preserve-3d;
-    background: pink;
 }
 .card:hover .cardContent{
     transform: rotateY(.5turn);
@@ -306,12 +314,29 @@ nav > img{
     left: 0;
     transform-style: preserve-3d;
 }
+.front{
+    background: pink;
+    text-align: center;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px; 
+}
+.front> img{
+    height: 300px;
+    width: 100px;
+}
 .front h3, .front img{
+    text-decoration: underline;
     transform: translateZ(100px);
 }
 .back{
+    background: yellow;
     transform: rotateY(.5turn);
     backface-visibility: hidden;
+    border-radius: 20px; 
 }
 .back img{
     transform: translateZ(100px);
