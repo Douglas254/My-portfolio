@@ -356,3 +356,312 @@ nav > img{
         margin-top: 50px;
     }
 }
+  /* projects */
+  #projects{
+    min-height: 100vh;
+    position: relative;
+}
+#projects h2{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 30px;
+}
+#projects2{
+ min-height: 90vh;
+ display: flex;
+ align-items: center;
+ flex-wrap: nowrap;
+ overflow-x: scroll;
+ width: 95vw;
+ position: absolute;
+ right: 0%;
+}
+.realProjects{
+  padding-left: 15px;
+  border-radius: 20px;
+  height: 350px;
+  min-width: 220px;
+  background: rgb(51, 192, 211);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.363) ;
+  transition: transform .2s ease-in-out;
+}
+.realProjects:hover{
+  z-index: 1;
+  transform: rotate(4deg);
+}
+.complete{
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: 10px;
+}
+.projectTitle{
+  margin-top: 30px;
+}
+.languages{
+  margin-top: 60px;
+}
+.sourceCode{
+  margin-top: 10px;
+}
+.contributions{
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.project1{
+  position: absolute;
+  left: 50px;
+}
+.project1:hover{
+  margin-right: 50px;
+}
+.project2{
+  position: absolute;
+  left: 250px;
+  background: violet;
+  transition: all .3s ease-in-out;
+}
+.project2Hover{
+  left: 320px;
+}
+.project3{
+  position: absolute;
+  left: 450px;
+  background: yellow;
+  transition: all .3s ease-in-out;
+}
+.project3Hover{
+  left: 520px;
+}
+.project4{
+  position: absolute;
+  left: 650px;
+  background: springgreen;
+  transition: all .3s ease-in-out;
+}
+.project4Hover{
+  left: 720px;
+}
+.project5{
+  position: absolute;
+  left: 850px;
+  background: sandybrown;
+  transition: all .3s ease-in-out;
+}
+.project5Hover{
+  left: 920px;
+}
+.project6{
+  position: absolute;
+  left: 1050px;
+  background: palevioletred;
+  transition: all .3s ease-in-out;
+}
+.project6Hover{
+  left: 1120px;
+}
+.project7{
+  position: absolute;
+  left: 1250px;
+  background: purple;
+  transition: all .3s ease-in-out;
+}
+.project7Hover{
+  left: 1320px;
+}
+  /* contact */
+  #contact{
+    height: max-content;
+}
+#contact article{
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+@media only screen and (max-width:975px) {
+    #contact{
+        height: calc(max-content + 50px);
+    }
+}
+
+#contact h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#contact h3{
+    /* margin-top: 20px; */
+    text-align: center;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+}
+.meso{
+   border: 2px solid white; 
+   appearance: none;
+   background: #f2f2f2;
+   padding : 10px;
+   padding-top: 20px;
+   border-radius: 3px;
+   width: 250px;
+   outline: none;
+   font-size: 14px;
+}
+.meso::placeholder{
+    color: black;
+    transition: color 0.8s ease;
+}
+.meso:focus::placeholder{
+    color: transparent;
+}
+.email-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+.email-field .placeholder{
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+                top 0.3s ease,
+                font-size 0.3s ease,
+                color 0.3s ease;
+}
+.email-field input:valid + .placeholder,
+.email-field input:focus + .placeholder{
+    top: 10px;
+    font-size: 10px;
+    color:  #C7493A;
+}
+.email-field input{
+    border: none; 
+   appearance: none;
+   background: #f2f2f2;
+   padding : 12px;
+   border-radius: 3px;
+   width: 250px;
+   outline: none;
+   font-size: 14px;
+}
+.email-field .one input{
+    background: none;
+    border: 2px solid #ddd;
+}
+.email-field .one input:valid,
+.email-field .one input:focus{
+    border-color: #222;
+    transition-delay: 0.1s;
+}
+/* .email-field .one input:valid + .placeholder,
+.email-field .one input:focus + .placeholder{
+    top: 20px;
+    background: #fff;
+} */
+button {
+    font-family: inherit;
+    font-size: 15px;
+    background: #2E1115;
+    color: white;
+    padding: 0.5em 0.8em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    width: max-content;
+}
+   
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+   
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+} 
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+} 
+button:hover span {
+    transform: translateX(5em);
+}
+button:active {
+    transform: scale(0.95);
+} 
+@keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+    to {
+     transform: translateY(-0.1em);
+    }
+}
+form{
+    margin-top: 50px;
+    margin-left: 20px
+}
+button{
+    margin-top: 30px;
+}
+.contacticons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.iconss{
+  margin-left: 40px;
+  font-size: 20px;
+}
+#tm{
+    text-align: center;
+    position: relative;
+    top : 10px;
+  }
+  .svg-icon {
+      width: 17px;
+      height: 17px;
+    }
+    
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+      fill: black;
+    }
+#facebook{
+    color: #4267B2;
+}
+#twitter{
+    color: #00A1E5;
+}
+#whatsapp{
+    color: rgb(27, 167, 202);
+}
+#spotify{
+    color: #1DD05D;
+}
+#linkedin{
+    color: #0270AD;
+}
+.iconss{
+    transition: font-size .3s ease;
+}
+.iconss:hover{
+    font-size: 30px;
+}
+    
+
