@@ -283,16 +283,15 @@ nav > img{
     width: 100vw;
     height: max-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 .card{
     height: max-content;
     width: max-content ;
-}
-#skills > main img{
-    height: auto;
-    width: 200px;
 }
 .cardContent{
     position: relative;
@@ -315,7 +314,6 @@ nav > img{
     transform-style: preserve-3d;
 }
 .front{
-    background: pink;
     text-align: center;
     font-family: var(--main-font);
     display: flex;
@@ -323,21 +321,38 @@ nav > img{
     justify-content: space-around;
     align-items: center;
     border-radius: 20px; 
+    background: #9B2335;
 }
-.front> img{
-    height: 300px;
-    width: 100px;
+.front > img{
+    height: 170px;
+    width: auto;
 }
 .front h3, .front img{
     text-decoration: underline;
     transform: translateZ(100px);
 }
 .back{
-    background: yellow;
     transform: rotateY(.5turn);
     backface-visibility: hidden;
     border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(135, 206, 206);
 }
 .back img{
+    height: 150px;
+    width: auto;
     transform: translateZ(100px);
+
+}
+.nodesvg{
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .card{
+        margin-top: 50px;
+    }
 }
