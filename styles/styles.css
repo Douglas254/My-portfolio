@@ -317,6 +317,7 @@ nav > img{
   position: relative;
   box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.363) ;
   transition: transform .2s ease-in-out;
+  position: absolute;
 }
 .realProjects:hover{
   z-index: 1;
@@ -370,36 +371,6 @@ nav > img{
   left: 650px;
   background: springgreen;
   transition: all .3s ease-in-out;
-}
-.project4Hover{
-  left: 720px;
-}
-.project5{
-  position: absolute;
-  left: 850px;
-  background: sandybrown;
-  transition: all .3s ease-in-out;
-}
-.project5Hover{
-  left: 920px;
-}
-.project6{
-  position: absolute;
-  left: 1050px;
-  background: palevioletred;
-  transition: all .3s ease-in-out;
-}
-.project6Hover{
-  left: 1120px;
-}
-.project7{
-  position: absolute;
-  left: 1250px;
-  background: purple;
-  transition: all .3s ease-in-out;
-}
-.project7Hover{
-  left: 1320px;
 }
   /* contact */
   #contact{
