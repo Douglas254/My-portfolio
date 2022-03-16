@@ -270,91 +270,21 @@ nav > img{
 
 /* my skill */
 #skills{
-    margin-top: 10px;
-    min-height: 90vh;
-    display: grid;
-    place-items: center;
-}
-#skills > h2{
+    background: #D4F4DD;
     text-align: center;
-    text-decoration: underline;
+    margin-top: 30px;
+    min-height: 80vh;
 }
-#skills > main {
-    width: 100vw;
-    height: max-content;
+#skills main{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
-    align-items: center;
-    height: 100%;
 }
-.card{
-    height: max-content;
-    width: max-content ;
-}
-.cardContent{
-    position: relative;
-    padding: 4em;
-    transition: transform 2s;
-    height: max-content;
-    height: 400px;
-    width: 250px;
-    transform-style: preserve-3d;
-}
-.card:hover .cardContent{
-    transform: rotateY(.5turn);
-}
-.front, .back{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-style: preserve-3d;
-}
-.front{
-    text-align: center;
-    font-family: var(--main-font);
+#skills main ul{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 20px; 
-    background: #9B2335;
 }
-.front > img{
-    height: 170px;
-    width: auto;
-}
-.front h3, .front img{
-    text-decoration: underline;
-    transform: translateZ(100px);
-}
-.back{
-    transform: rotateY(.5turn);
-    backface-visibility: hidden;
-    border-radius: 20px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(135, 206, 206);
-}
-.back img{
-    height: 150px;
-    width: auto;
-    transform: translateZ(100px);
-
-}
-.nodesvg{
+#skills main img{
     height: 30px;
     width: 30px;
-}
-@media screen and (max-width: 768px){
-    .card{
-        margin-top: 50px;
-    }
 }
   /* projects */
   #projects{
