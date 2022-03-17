@@ -69,14 +69,25 @@ const projectDivs = [...document.querySelectorAll(".realProjects")]
 
 
 for (let i = 0; i < projectDivs.length; i++) {
-    projectDivs[i].addEventListener("click",()=>{
-       let currentClick =  projectDivs.indexOf(projectDivs[i]);
-       console.log(currentClick)
+    projectDivs[i].addEventListener("mouseover",()=>{
+       let currentClick =  projectDivs.indexOf(projectDivs[i])
        for (let j = currentClick + 1; j < projectDivs.length; j++) {
-           console.log(projectDivs[j])
            // i swear to god i dont know how this shit worked 🤣
-           projectDivs[j].classList.toogle("leftMove")
+           if (window.innerWidth > 480){
+                projectDivs[j].classList.toggle("leftMove");
+           }
        }
     })
 }
+for (let i = 0; i < projectDivs.length; i++) {
+    projectDivs[i].addEventListener("mouseout",()=>{
+       let currentClick =  projectDivs.indexOf(projectDivs[i]);
+       for (let j = currentClick + 1; j < projectDivs.length; j++) {
+           if (window.innerWidth > 480){
+                projectDivs[j].classList.toggle("leftMove");
+           }
+       }
+    })
+}
+
 

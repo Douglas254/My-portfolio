@@ -287,7 +287,7 @@ nav > img{
     width: 30px;
 }
   /* projects */
-  #projects{
+#projects{
     min-height: 100vh;
     position: relative;
 }
@@ -306,22 +306,32 @@ nav > img{
  position: absolute;
  right: 0%;
 }
+.vertical-scroll{
+    display: flex;
+    min-height: 88vh;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .realProjects{
   padding-left: 15px;
   border-radius: 20px;
   height: 350px;
-  min-width: 220px;
-  background: rgb(51, 192, 211);
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   position: relative;
   box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.363) ;
-  transition: transform .2s ease-in-out;
-  position: absolute;
+  transition: transform 200ms ease;
+  margin: 0 10px 0 10px;
+  transition: left 1000ms ease;
 }
 .realProjects:hover{
   z-index: 1;
-  transform: rotate(4deg);
+  transform: rotate(6deg);
+}
+.leftMove{
+    left: 50px;
 }
 .complete{
   align-self: flex-start;
@@ -341,40 +351,10 @@ nav > img{
   margin-top: auto;
   margin-bottom: 20px;
 }
-.project1{
-  position: absolute;
-  left: 50px;
-}
-.project1:hover{
-  margin-right: 50px;
-}
-.project2{
-  position: absolute;
-  left: 250px;
-  background: violet;
-  transition: all .3s ease-in-out;
-}
-.project2Hover{
-  left: 320px;
-}
-.project3{
-  position: absolute;
-  left: 450px;
-  background: yellow;
-  transition: all .3s ease-in-out;
-}
-.project3Hover{
-  left: 520px;
-}
-.project4{
-  position: absolute;
-  left: 650px;
-  background: springgreen;
-  transition: all .3s ease-in-out;
-}
   /* contact */
   #contact{
     height: max-content;
+    background: linear-gradient(90deg,hsl(204, 100%, 50%),hsl(204, 100%, 80%));
 }
 #contact article{
     padding: 20px;
@@ -459,11 +439,7 @@ nav > img{
     border-color: #222;
     transition-delay: 0.1s;
 }
-/* .email-field .one input:valid + .placeholder,
-.email-field .one input:focus + .placeholder{
-    top: 20px;
-    background: #fff;
-} */
+
 button {
     font-family: inherit;
     font-size: 15px;
@@ -564,5 +540,23 @@ button{
 .iconss:hover{
     font-size: 30px;
 }
-    
 
+#lass{
+    height: 50vh;
+    width: 400px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#lass >  div{
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
