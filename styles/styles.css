@@ -325,6 +325,9 @@ nav > img{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+    row-gap: 30px;
+    padding: 20px;
 }
 .realProjects{
   padding-left: 15px;
@@ -364,9 +367,22 @@ nav > img{
   margin-top: auto;
   margin-bottom: 20px;
 }
+.firstProject{
+    background: #1DD05D !important;
+}
+.secpro{
+    background: #525B76;
+}
+.thirpro{
+    background: #FFC145;
+}
+.fourpro{
+    background: #AFAAB9;
+}
   /* contact */
   #contact{
     height: max-content;
+    padding: 30px;
     background: linear-gradient(90deg,hsl(204, 100%, 50%),hsl(204, 100%, 80%));
 }
 #contact article{
