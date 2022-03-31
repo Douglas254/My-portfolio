@@ -323,11 +323,12 @@ nav > img{
     display: flex;
     min-height: 88vh;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     margin-top: 20px;
     row-gap: 30px;
     padding: 20px;
+    overflow-y: scroll;
 }
 .realProjects{
   padding-left: 15px;
