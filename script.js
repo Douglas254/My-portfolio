@@ -34,6 +34,11 @@ moon.addEventListener("click", ()=>{
     moon.classList.toggle("fa-moon");
     moon.classList.toggle("far");
     moon.classList.toggle("fa-sun");
+    let allChildElements = [...document.querySelectorAll("nav ul a")]
+    for (let i = 0; i < allChildElements.length; i++) {
+        const element = allChildElements[i];
+        element.classList.toggle(".darkMode")
+    }
 })
 //scrolling animations
 window.addEventListener("scroll",()=>{

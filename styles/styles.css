@@ -51,10 +51,10 @@ nav > ul *{
     transition: color 100ms ease;
 }
 nav > ul > a{
-    color: black;
+    color: #DD223F;
 }
 nav > ul > a:visited{
-    color: black;
+    color: #DD223F;
 }
 nav > ul > a:hover{
     color: rgb(24, 123, 204);
@@ -66,8 +66,8 @@ nav > ul:last-child{
     margin-right: 10px;
 }
 nav > img{
-    height: 70px;
-    width: 80px;
+    height: 50px;
+    width: auto;
 }
 .darkMode{
     color: whitesmoke;
@@ -75,6 +75,14 @@ nav > img{
 }
 .darkModeElements{
     color: black;
+}
+@media screen and (min-width: 768px){
+   nav ul{
+       position: relative;
+       top: 15px;
+       z-index: 1070 !important;
+       right: 20px;
+   } 
 }
 @media screen and (max-width:768px){
     nav > ul {
@@ -116,7 +124,7 @@ nav > img{
     }
     nav > img{
         height: 40px;
-        width: 40px;
+        width: auto;
     }
 }
 /* landing page  */
