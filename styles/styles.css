@@ -26,6 +26,9 @@ nav {
   overflow-x: hidden !important;
   padding: 0 20px 0 20px;
   width: 100vw;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 nav > .fa-bars,
 nav > ul > .fa-times-circle {
@@ -621,4 +624,28 @@ button {
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
   transform-origin: top center;
+}
+
+span {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.landing__img {
+  box-shadow: rgb(222, 64, 64, 0.4) -5px 5px, rgb(222, 64, 64, 0.3) -10px 10px,
+    rgb(222, 64, 64, 0.2) -15px 15px, rgb(222, 64, 64, 0.1) -20px 20px,
+    rgb(222, 64, 64, 0.05) -25px 25px;
+}
+
+.landing__img:hover {
+  box-shadow: rgb(222, 64, 64, 0.4) -5px 5px, rgb(222, 64, 64, 0.3) -10px 10px,
+    rgb(222, 64, 64, 0.2) -15px 15px, rgb(222, 64, 64, 0.1) -20px 20px,
+    rgb(222, 64, 64, 0.05) -25px 25px, rgb(222, 64, 64, 0.06) -30px 30px,
+    rgb(222, 64, 64, 0.07) -35px 35px;
 }
