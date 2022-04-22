@@ -95,7 +95,7 @@ for (let i = 0; i < projectDivs.length; i++) {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
-  var dataText = ["Tinega Collins", "Software Developer"];
+  var dataText = ["Tinega Collins", "A Software Developer"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
